@@ -1,0 +1,40 @@
+/* #header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-image: url(),
+    linear-gradient(30deg, #795277 30%, #355192 85%);
+  background-size: 256px, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+body.index #header {
+  background: none;
+}
+#header .logo {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1em;
+  height: inherit;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+}
+body.index #header .logo {
+  display: none;
+}
+#header .logo > .label {
+  display: block;
+  letter-spacing: -0.025em;
+  font-weight: bold;
+  color: #fff;
+} */

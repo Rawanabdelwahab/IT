@@ -1,0 +1,617 @@
+body#website.index:before,
+body#website.index:after {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 110vh;
+  pointer-events: none;
+  transform: scale(1);
+  z-index: -1;
+}
+/* rawan */
+body {
+  -webkit-text-size-adjust: none;
+}
+body {
+  background-image: url(https://carrd.co/assets/images/etc/bg.svg),
+  linear-gradient(100deg, #795277 30%, #355192 85%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: filter .5s ease, opacity 1s ease;
+}
+body,
+input,
+select,
+textarea {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.75;
+  font-size: 1em;
+}
+/* body.is-nonTouch {
+  -moz-touch-action: pan-y;
+  -webkit-touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+} */
+body#website.index {
+  text-align: center;
+  cursor: default;
+}
+#header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-image: url(https://carrd.co/assets/images/etc/overlay.png),
+    linear-gradient(30deg, #795277 30%, #355192 85%);
+  background-size: 256px, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+body.index #header {
+  background: none;
+}
+#header .logo {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1em;
+  height: inherit;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+}
+body.index #header .logo {
+  display: none;
+}
+a {
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  border-bottom: dotted 2px rgba(255, 255, 255, 0.375);
+}
+#header .logo > .label {
+  display: block;
+  letter-spacing: -0.025em;
+  font-weight: bold;
+  color: #fff;
+}
+#header nav a[href="#menu"] > .label {
+  display: none;
+}
+#menu {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease, visibility 0.25s;
+  transition-delay: 0.25s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-image: url(https://carrd.co/assets/images/etc/overlay.png),
+    linear-gradient(30deg, rgba(121, 82, 119, 0.975) 30%, #355192 85%);
+  background-size: 256px, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  visibility: hidden;
+  opacity: 0;
+  outline: 0;
+}
+#menu > .inner {
+  transform: scale(0.9875);
+  transition: transform 0.3125s ease, opacity 0.25s ease;
+  transition-delay: 0s;
+  max-width: 80em;
+  width: 100%;
+  opacity: 0;
+  padding: 3em;
+}
+body#website.index > .inner {
+  width: calc(100% - 8em);
+  max-width: 64em;
+  margin: 0 auto;
+}
+body#website.index > .inner > section {
+  border-radius: 6px;
+  margin-top: 10em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+body#website.index > .inner > section:first-child {
+  margin-top: 0;
+}
+body#website.index #intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -4em;
+  
+  padding: 4em 0;
+  transition: transform 0.5s ease, opacity 1s ease;
+}
+body#website.index #intro .content {
+  margin-top: 2em;
+}
+ul.actions {
+  display: flex;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin-left: -1em;
+}
+ul.actions.stacked {
+  flex-direction: column;
+  margin-left: 0;
+}
+input[type="submit"].wide,
+input[type="reset"].wide,
+input[type="button"].wide,
+button.wide,
+.button.wide {
+  min-width: 16.5em;
+}
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+button.special,
+.button.special {
+  background-color: #33ada9;
+  color: #fff !important; /* Assuming you want white text */
+  box-shadow: none;
+}
+input[type="submit"].wide,
+input[type="reset"].wide,
+input[type="button"].wide,
+button.wide,
+.button.wide {
+  min-width: 16.5em;
+}
+body#website.index #intro .button:not(.special) {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+body#website.index > .inner > section {
+  border-radius: 6px;
+  margin-top: 10em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+body#website.index > .inner > section.style1 {
+  background-color: rgba(36, 37, 45, 0.6);
+}
+/* body#website.index #about .carousel {
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    background-color: rgba(36, 37, 45, .6);
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+} */
+body#website.index #about .carousel {
+  overflow: hidden;
+  border-radius: 0 0 6px 6px;
+  background-color: rgba(36, 37, 45, 0.6); /* Adjust alpha as needed */
+  backface-visibility: hidden; /* Standard property */
+  -webkit-backface-visibility: hidden; /* For older WebKit browsers */
+  transform: translate3d(0, 0, 0); /* Standard property */
+  -webkit-transform: translate3d(0, 0, 0); /* For older WebKit browsers */
+}
+body#website.index #about .carousel .reel {
+  display: flex;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  width: 400em;
+  margin-left: 100px;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #about .carousel .reel {
+    width: 300em;
+  }
+}
+body#website.index #about .carousel.active .reel {
+  animation: carousel-reel 45s linear 0s infinite;
+  opacity: 1;
+}
+body#website.index #about .carousel.active.paused .reel {
+  animation-play-state: paused;
+}
+body#website.index > .inner > section {
+  border-radius: 6px;
+  margin-top: 10em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights {
+    max-width: 32em;
+    background: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section > * {
+    width: 100%;
+  }
+}
+
+/* body#website.index #highlights>section .pic {
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://carrd.co/assets/images/etc/overlay.png), linear-gradient(45deg, #415d9d 0%, #896387 100%);
+    background-size: 256px, cover;
+    background-position: center, center;
+    background-repeat: repeat, no-repeat;
+} */
+body#website.index #highlights > section .pic {
+  transform: translate3d(
+    0,
+    0,
+    0
+  ); /* No need for a vendor prefix for modern browsers */
+  backface-visibility: hidden; /* Standard property */
+  -webkit-backface-visibility: hidden; /* For older WebKit browsers */
+  position: relative;
+  overflow: hidden;
+  background-image: url(https://carrd.co/assets/images/etc/overlay.png),
+    linear-gradient(45deg, #415d9d 0%, #896387 100%);
+  background-size: 256px, cover; /* First image size, then gradient */
+  background-position: center, center; /* First image position, then gradient */
+  background-repeat: repeat, no-repeat; /* First image repeat, then gradient */
+}
+
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section .pic {
+    border-radius: 6px 6px 0 0 !important;
+  }
+}
+body#website.index #highlights > section:first-child > :first-child {
+  border-radius: 6px 0 0 0;
+}
+body#website.index #highlights > section .pic .highlight {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+body#website.index #highlights > section .pic .highlight.played {
+  cursor: pointer;
+}
+body#website.index .highlight.simple .templates {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200%;
+}
+body#website.index .highlight.simple.active .templates {
+  animation: highlight-simple 5s;
+}
+body#website.index .highlight.simple .templates .template {
+  display: block;
+  width: 50%;
+  background-size: cover;
+}
+body#website.index .highlight.simple .templates .template.n1 {
+  background-image: url(https://carrd.co/assets/website/images/landing/template-1.jpg);
+}
+body#website.index .highlight.simple .templates .template.n2 {
+  background-image: url(https://carrd.co/assets/website/images/landing/template-2.jpg);
+}
+body#website.index .highlight.simple .templates .template.n3 {
+  background-image: url(https://carrd.co/assets/website/images/landing/template-3.jpg);
+}
+body#website.index .highlight.simple .templates .template.n4 {
+  background-image: url(https://carrd.co/assets/website/images/landing/template-3.jpg);
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section > * {
+    width: 100%;
+  }
+}
+body#website.index #highlights > section .content {
+  padding: 4em 4em 2em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 37, 45, 0.6);
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section .content {
+    border-radius: 0 0 6px 6px !important;
+  }
+}
+body#website.index #highlights > section:first-child > :last-child {
+  border-radius: 0 6px 0 0;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section > * {
+    width: 100%;
+  }
+}
+body#website.index #highlights > section .pic {
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  background-image: url(https://carrd.co/assets/images/etc/overlay.png),
+    linear-gradient(45deg, #415d9d 0%, #896387 100%);
+  background-size: 256px, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section .pic {
+    border-radius: 6px 6px 0 0 !important;
+  }
+}
+body#website.index #highlights > section .pic .highlight {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+body#website.index .highlight.responsive .phone {
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.1);
+  height: 70%;
+  left: 35%;
+  margin-top: -0.25em;
+  position: absolute;
+  top: 15%;
+  width: 30%;
+}
+body#website.index .highlight.responsive.active .phone {
+  animation: highlight-responsive-phone 5s;
+}
+
+body#website.index .highlight.responsive .phone .screen {
+  background-image: url(https://carrd.co/assets/images/etc/overlay.png),
+    linear-gradient(45deg, #718dcd 0%, #b993b7 100%);
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  background-size: 256px, cover;
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body#website.index .highlight.responsive .phone .screen .image {
+  background-image: url(https://carrd.co/assets/website/images/landing/template-3.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body#website.index .highlight.responsive.active .phone .screen .image {
+  animation: highlight-responsive-phone-screen-image 5s;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section > * {
+    width: 100%;
+  }
+}
+body#website.index #highlights > section .content {
+  padding: 4em 4em 2em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 37, 45, 0.6);
+}
+@media screen and (max-width: 980px) {
+  body#website.index #highlights > section .content {
+    border-radius: 0 0 6px 6px !important;
+  }
+}
+body#website.index > .inner > section {
+  border-radius: 6px;
+  margin-top: 10em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+body#website.index > .inner > section.style1 {
+  background-color: rgba(36, 37, 45, 0.6);
+}
+
+body#website.index #pro .pro-features {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #pro .pro-features {
+    display: block;
+  }
+}
+body#website.index #pro .pro-cta {
+  border-top: solid 2px rgba(255, 255, 255, 0.075);
+  margin-top: 6em;
+  padding-top: 4em;
+}
+@media screen and (max-width: 980px) {
+  body#website.index #pro .pro-cta {
+    margin-top: 4em;
+    padding-top: 4em;
+  }
+}
+ul.actions {
+  display: flex;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin-left: -1em;
+}
+ul.actions.special {
+  justify-content: center;
+  width: calc(100% + 1em);
+}
+ul.actions.stacked {
+  flex-direction: column;
+  margin-left: 0;
+}
+input[type="submit"].wide,
+input[type="reset"].wide,
+input[type="button"].wide,
+button.wide,
+.button.wide {
+  min-width: 16.5em;
+}
+body#website.index > .inner > section.style2 {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+body#website.index #cta {
+  padding: 4em 4em 2em 4em;
+  max-width: 32em;
+}
+ul.menu {
+  padding-left: 0;
+}
+#footer .menu {
+  font-size: 0.8em;
+  margin: 0;
+}
+#footer .copyright {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 1.75em 0 0 0;
+  opacity: 0.5;
+}
+
+body#website.index #footer .copyright {
+  color: rgba(255, 255, 255, 0.15);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body#website.index:after {
+  background-image: url(https://carrd.co/assets/images/etc/bg.svg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: filter .5s ease, opacity 1s ease;
+}

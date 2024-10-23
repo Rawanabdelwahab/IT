@@ -1,0 +1,40 @@
+/* body.is-nonTouch *, body.is-nonTouch *:before, body.is-nonTouch *:after {
+  -moz-touch-action: pan-y;
+  -webkit-touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+body#website.index>.inner>section {
+  border-radius: 6px;
+  margin-top: 10em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+body#website.index>.inner>section.style1 {
+  background-color: rgba(36, 37, 45, .6);
+}
+body#website.index #about .carousel .reel {
+  display: flex;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  width: 400em;
+}
+body#website.index #about .carousel.active .reel {
+  animation: carousel-reel 45s linear 0s infinite;
+  opacity: 1;
+}
+
+
+
+
+
+
+body#website.index #about .carousel {
+  overflow: hidden;
+  border-radius: 0 0 6px 6px;
+  background-color: rgba(36, 37, 45, .6);
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+} */
