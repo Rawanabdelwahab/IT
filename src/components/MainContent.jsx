@@ -2,13 +2,14 @@
 import React from "react";
 import Header from "./Header";
 import Bbbbody from "./Bbbbody";
-import Footer from "./Footer"
+import Footer from "./Footer";
+
 export default function MainContent() {
   return (
     <div>
       <Header />
       <Bbbbody />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

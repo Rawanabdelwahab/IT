@@ -4,6 +4,7 @@ import Card1 from "./Card1.jsx";
 import Stack from "@mui/material/Stack";
 import template from "../images/template-3.jpg";
 import { Link } from "react-router-dom";
+
 export default function Body2() {
   return (
     <>

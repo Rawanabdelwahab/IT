@@ -41,7 +41,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ width: "100vw" }} >
       <Toolbar
         sx={{ background: "linear-gradient(30deg, #795277 30%, #355192 85%)" }}
       >

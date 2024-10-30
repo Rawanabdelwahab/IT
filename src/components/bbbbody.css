@@ -370,15 +370,7 @@ body#website.index #highlights > section .pic {
     border-radius: 6px 6px 0 0 !important;
   }
 }
-body#website.index #highlights > section .pic .highlight {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  user-select: none;
-}
+
 
 body#website.index .highlight.responsive .phone {
   background: #fff;
@@ -427,14 +419,7 @@ body#website.index .highlight.responsive.active .phone .screen .image {
     width: 100%;
   }
 }
-body#website.index #highlights > section .content {
-  padding: 4em 4em 2em 4em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(36, 37, 45, 0.6);
-}
+
 @media screen and (max-width: 980px) {
   body#website.index #highlights > section .content {
     border-radius: 0 0 6px 6px !important;
@@ -447,9 +432,7 @@ body#website.index > .inner > section {
   margin-left: auto;
   margin-right: auto;
 }
-body#website.index > .inner > section.style1 {
-  background-color: rgba(36, 37, 45, 0.6);
-}
+
 
 body#website.index #pro .pro-features {
   display: flex;
@@ -488,13 +471,7 @@ ul.actions.stacked {
   flex-direction: column;
   margin-left: 0;
 }
-input[type="submit"].wide,
-input[type="reset"].wide,
-input[type="button"].wide,
-button.wide,
-.button.wide {
-  min-width: 16.5em;
-}
+
 body#website.index > .inner > section.style2 {
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 }
@@ -608,10 +585,3 @@ video {
   vertical-align: baseline;
 }
 
-body#website.index:after {
-  background-image: url(https://carrd.co/assets/images/etc/bg.svg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  transition: filter .5s ease, opacity 1s ease;
-}
